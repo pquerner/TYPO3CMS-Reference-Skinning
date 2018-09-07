@@ -16,7 +16,7 @@ Steps can be enabled in the Backend as follows:
       $GLOBALS['TYPO3_CONF_VARS']['BE']['compressionLevel'] = 5;
 
 
-#. In a .htaccessfile or in virtual host add some configuration provided
+#. In a .htaccess file or in virtual host add some configuration provided
    by file misc/advanced\_htaccess. ::
 
       <FilesMatch "\.js\.gzip$">
@@ -27,12 +27,12 @@ Steps can be enabled in the Backend as follows:
            </FilesMatch>
            AddEncoding gzip .gzip
 
-Followingthose 2 steps will generate a compressed file and therefore
+Following those 2 steps will generate a compressed file and therefore
 add a "gzip" suffix to the file. ::
 
    merged-43184ce406ccfb7c04df66f024414129-5c86564215e4bad82a1955b74b639532.css.gzip?1278152902
 
-Itmay happen that the browser does not support GZIP compression for
+It may happen that the browser does not support GZIP compression for
 some reason. Typically, it can be behind a proxy server which does not
 support GZIP headers. In this case, the compressor will detect it and
 send the un-compressed files.
