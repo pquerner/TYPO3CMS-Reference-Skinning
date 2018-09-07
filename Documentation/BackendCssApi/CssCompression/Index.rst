@@ -20,12 +20,12 @@ Steps can be enabled in the Backend as follows:
    by file misc/advanced\_htaccess. ::
 
       <FilesMatch "\.js\.gzip$">
-                   AddType "text/javascript" .gzip
-           </FilesMatch>
-           <FilesMatch "\.css\.gzip$">
-                   AddType "text/css" .gzip
-           </FilesMatch>
-           AddEncoding gzip .gzip
+          AddType "text/javascript" .gzip
+      </FilesMatch>
+      <FilesMatch "\.css\.gzip$">
+          AddType "text/css" .gzip
+      </FilesMatch>
+      AddEncoding gzip .gzip
 
 Followingthose 2 steps will generate a compressed file and therefore
 add a "gzip" suffix to the file. ::
